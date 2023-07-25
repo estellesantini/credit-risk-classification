@@ -1,7 +1,7 @@
-# credit-risk-classification.
+# Supervised Learning Credit Risk Classification
 
 ## Overview of Analysis
-In this supervised learning challenge a model is trained to evaluate if a loan is a healthy or high risk loan. By using test data and assessing the balance of each class, the target variable can be predicted. With this prediction, the model's can evaluate the accuracy and how well the model performs. 
+In this supervised learning challenge a model is trained to evaluate if a loan is a healthy or high-risk loan. By using test data and classification of 0 and 1 or healthy and high-risk loans, the target variable can be predicted. With this prediction, we can evaluate the accuracy and how well the model performs. 
 
 To build this model, I took the following steps:
 1. Split the Data into Training and Testing Sets
@@ -11,7 +11,7 @@ To build this model, I took the following steps:
 While 
 5. Re-evaluate the Model's Performance
 
-To have a good representation of the samples and have unbiased predictions, the dataset must be balanced meaning have around the same number of occurences. There are multiple other components assessed in the performance of a model including precision, recall, f-1 score, and overall metrics. The purpose of this analysis is to determine if the model had a good performance in predicting the risk of a loan.
+To have a good representation of the samples and have unbiased predictions, the dataset must be balanced meaning have around the same number of occurences. There are multiple other components assessed in the performance of a model including precision, recall, f-1 score, and overall metrics. The purpose of this analysis is to determine if the model has a good performance in predicting the risk of a loan.
 
 ## Results
 <!-- The results: Using a bulleted list, describe the accuracy score, the precision score, and recall score of the machine learning model -->
@@ -34,7 +34,7 @@ The results of the model using the original dataset can be summarized by the fol
 
 The classification report demonstrates that this model performs very well for class 0 (healthy loans) with nearly 100% precision and recall. The model also performs very strongly for identifying high-risk loans, with a lower yet still high precision, recall, and F1-score. Precision is the proportion of true positive predictions to the total number of predictions in that class, recall measures the true positive predictions to the number of predictions in the class, and f1-score encompasses the predictions and recall.
 
-To break these statistics down further, the high-risk loan's precision of 0.87 indicates that the model correctly predicts that a loan is a high-risk about 87% of the time, whereas 100% of healthy loan predictions are healthy loans. The recall of a high-risk loan shows 89% of the time the model can determine actual samples, while healthy loans can 100% of the time. Both loans have a good balance between precision and recall although the high-risk F1-score is 0.12 lower. 
+To break these statistics down further, the high-risk loan's precision of 0.87 indicates that the model correctly predicts that a loan is high-risk about 87% of the time, whereas 100% of healthy loan predictions are healthy loans. The recall of a high-risk loan shows 89% of the time the model can determine actual samples, while healthy loans can 100% of the time. Both loans have a good balance between precision and recall although the high-risk F1-score is 0.12 lower. 
 
 Although this looks favorable, in this analysis it is important to note that there is a wide class imbalance. The support shows that the number of occurences of healthy loans was over 30 times more than the frequency of high-risk loans. This shows that the dataset was not balanced, which should be considered in analyzing these statistics. 
 
